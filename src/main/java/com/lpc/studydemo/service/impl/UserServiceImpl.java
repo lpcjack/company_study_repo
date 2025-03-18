@@ -16,7 +16,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
-
     @Override
     public UserDto selectById(Integer id) {
         User user = userMapper.selectById(id);
@@ -27,5 +26,6 @@ public class UserServiceImpl implements UserService {
         // 成功返回信息
         return new UserDto(id, user.getUsername(), user.getGender());
     }
+
 
 }

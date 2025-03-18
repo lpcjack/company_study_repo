@@ -15,3 +15,10 @@ spring:
     username: root
     password: 123456
 
+  # 配置freemarker
+  freemarker:
+    cache: false # 是否缓存
+    suffix: .ftl # 模板文件后缀
+    settings:
+      template_update_delay: 0 # 模板更新延迟时间
+    template-loader-path: classpath:/templates # 模板文件路径
